@@ -1,0 +1,44 @@
+//* prueba.txt *//
+
+//* Recuerden modificar de este archivo todo componente lexico que definieron
+diferente en su lenguaje, como operador de asignacion, apertura y cierre de
+ciclos y condicionales, operadores logicos, nombres de tipos, etc. *//
+
+
+DECLARE.SECTION
+[suma, contador, d1] := [FLOAT, INT, FLOAT]
+[actual, contar, palabra] := [FLOAT, FLOAT, STRING]
+[var] := [INT]
+ENDDECLARE.SECTION
+
+PROGRAM.SECTION
+
+WRITE "Prueba.txt AnalizadorLexico"
+
+contador ::= 0
+suma ::= 76.5
+contar ::= 18.22
+
+while (contador <= 9) {
+	contador := contador + 1
+	actual := (contador / 0.342) + (contador * (contar + 4.67))
+	suma := suma + actual
+	}
+WRITE  "La variable suma"
+
+
+If ((actual > 2) and (actual <> 0)){
+	WRITE  "actualesmayorque2ydistintode"
+	palabra = "es mayor"
+}
+Else{
+	WRITE "no es mayor que 2"
+}
+
+//* TAKE Grupo 1, eliminar si no es tu tema especial *//
+
+resul ::= TAKE(+; id; [3])
+
+resul ::= TAKE(+; id; [1,2.5,32767])
+
+ENDPROGRAM.SECTION
